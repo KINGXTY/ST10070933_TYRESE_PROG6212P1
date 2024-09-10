@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Submit Claim";
+}
+
+<h2>Submit Monthly Claim</h2>
+
+<form method="post" action="/Claim/Submit">
+    <div class="form-group">
+        <label for="HoursWorked">Hours Worked:</label>
+        <input type="number" id="HoursWorked" name="HoursWorked" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="HourlyRate">Hourly Rate:</label>
+        <input type="number" id="HourlyRate" name="HourlyRate" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="SupportingDocument">Supporting Document:</label>
+        <input type="file" id="SupportingDocument" name="SupportingDocument" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Submit Claim</button>
+</form>

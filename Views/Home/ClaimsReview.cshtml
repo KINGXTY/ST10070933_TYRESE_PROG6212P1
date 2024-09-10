@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Review Claims";
+}
+
+<h2>Review Claims</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer Name</th>
+            <th>Hours Worked</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>       
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>$400</td>
+            <td>Pending</td>
+            <td>
+                <a href="/Claim/Approve/1" class="btn btn-primary">Approve</a>
+                <a href="/Claim/Reject/1" class="btn btn-danger">Reject</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

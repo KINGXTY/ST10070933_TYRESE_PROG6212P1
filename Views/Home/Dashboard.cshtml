@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Welcome, @User.Identity.Name!</h2>
+
+<ul>
+    <li><a href="/Claim/Submit">Submit New Claim</a></li>
+    <li><a href="/Claim/List">View Claims</a></li>
+    <li><a href="/Account/Profile">Profile</a></li>
+</ul>
+
+<div>
+    <h3>Pending Claims</h3>
+    <!-- Display a list of pending claims -->
+</div>
+
+<div>
+    <h3>Approved Claims</h3>
+    <!-- Display a list of approved claims -->
+</div>
