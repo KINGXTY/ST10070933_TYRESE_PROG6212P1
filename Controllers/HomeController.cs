@@ -34,7 +34,10 @@ namespace ST10070933_PROG6212P1.Controllers
         {
             return View();
         }
-       
+        public IActionResult Signup()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
